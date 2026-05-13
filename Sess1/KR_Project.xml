@@ -1,0 +1,1340 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontology.org/traffic/vienna-convention#"
+     xml:base="http://www.ontology.org/traffic/vienna-convention"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vienna-convention="http://www.ontology.org/KR_Project/vienna-convention#"
+     xmlns:vienna-convention1="http://www.ontology.org/traffic/vienna-convention#">
+    <owl:Ontology rdf:about="http://www.ontology.org/traffic/vienna-convention"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#hasBorderColour -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.org/traffic/vienna-convention#hasBorderColour">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#hasGroundColour -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.org/traffic/vienna-convention#hasGroundColour">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.org/traffic/vienna-convention#hasShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#hasSymbol -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontology.org/traffic/vienna-convention#hasSymbol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#AdditionalPanel -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#AdditionalPanel">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#RoadSign"/>
+        <rdfs:comment>Supplementary panels placed below or within other signs (Section H).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Black -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Black">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Blue -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Blue">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Circle -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Circle">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Colour -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#DangerWarningSign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#RoadSign"/>
+        <rdfs:comment>Signs intended to warn road-users of a danger on the road and inform them of its nature (Section A).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#DirectionPositionIndicationSign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#DirectionPositionIndicationSign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#InformativeSign"/>
+        <owl:disjointWith rdf:resource="http://www.ontology.org/traffic/vienna-convention#InformationFacilitiesServiceSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#InformationFacilitiesServiceSign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#InformationFacilitiesServiceSign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#InformativeSign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#InformativeSign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#InformativeSign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#RoadSign"/>
+        <rdfs:comment>Signs intended to guide road-users or provide useful information (Sections F, G).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#LeftBendSymbol -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#LeftBendSymbol">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+        <owl:disjointWith rdf:resource="http://www.ontology.org/traffic/vienna-convention#RightBendSymbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#MandatorySign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#MandatorySign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#RegulatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Octagon -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Octagon">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#PrioritySign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#PrioritySign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#RegulatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#ProhibitorySign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#RegulatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Red -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Red">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#RegulatorySign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#RegulatorySign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#RoadSign"/>
+        <rdfs:comment>Signs intended to inform road-users of special obligations, restrictions or prohibitions (Sections B, C, D, E).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#RightBendSymbol -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#RightBendSymbol">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#RoadSign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#RoadSign"/>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Shape -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#SpecialRegulationSign -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#SpecialRegulationSign">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#RegulatorySign"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Square -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_square">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Symbol -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Triangle -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_triangle">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#White -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#White">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Yellow -->
+
+    <owl:Class rdf:about="http://www.ontology.org/traffic/vienna-convention#Yellow">
+        <rdfs:subClassOf rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#Sign_A1a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A1a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <vienna-convention1:hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <vienna-convention1:hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <vienna-convention1:hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <vienna-convention1:hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_left_bend"/>
+    </owl:NamedIndividual>
+
+
+    <!-- http://www.ontology.org/traffic/vienna-convention#symbol_left_bend -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_left_bend">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#LeftBendSymbol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#AdditionalPanel"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#InformativeSign"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#RegulatorySign"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#Black"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#Blue"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#Red"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#White"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#Yellow"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#Circle"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#Octagon"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_square"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#PrioritySign"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+            <rdf:Description rdf:about="http://www.ontology.org/traffic/vienna-convention#SpecialRegulationSign"/>
+        </owl:members>
+    </rdf:Description>
+
+<!-- ... existing code ... -->
+
+    <!-- Symbols for Danger Warning Signs -->
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_left_bend">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_right_bend">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_double_bend_first_left">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_double_bend_first_right">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_steep_descent">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_steep_ascent">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_carriageway_narrows">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_swing_bridge">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_quay_or_river_bank">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_uneven_road">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_hump_bridge">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_dip">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_dangerous_shoulders">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_slippery_road">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_loose_gravel">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_falling_rocks">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_pedestrian_crossing">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_children">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_cyclists_entering_or_crossing">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_domestic_animal_crossing">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_wild_animal_crossing">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_road_works">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_light_signals">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_intersection_priority_general">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_intersection_give_way">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_intersection_stop">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_roundabout">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_two_way_traffic">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_traffic_congestion">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_level_crossing_with_gates">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_other_level_crossing">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_intersection_tramway">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_st_andrews_cross">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_three_oblique_bars">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_two_oblique_bars">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_one_oblique_bar">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_airfield">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_cross_wind">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_other_dangers">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <!-- Sign Individuals (Danger Warning Signs) -->
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A1a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_left_bend"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A1b">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_right_bend"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A1c">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_double_bend_first_left"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A1d">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_double_bend_first_right"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A2a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_steep_descent"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A3a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_steep_ascent"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A4a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_carriageway_narrows"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A5">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_swing_bridge"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A6">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_quay_or_river_bank"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A7a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_uneven_road"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A7b">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_hump_bridge"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A7c">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_dip"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A8">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_dangerous_shoulders"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A9">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_slippery_road"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A10a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_loose_gravel"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A11a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_falling_rocks"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A12a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_pedestrian_crossing"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A13">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_children"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A14">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_cyclists_entering_or_crossing"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A15a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_domestic_animal_crossing"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A15b">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_wild_animal_crossing"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A16">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_road_works"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A17a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_light_signals"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A18a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_intersection_priority_general"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A19a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_intersection_give_way"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A20">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_intersection_stop"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A22">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_roundabout"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A23">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_two_way_traffic"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A24">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_traffic_congestion"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A25">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_level_crossing_with_gates"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A26a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_other_level_crossing"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A27">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_intersection_tramway"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A28a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_cross"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_black"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_st_andrews_cross"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A28c">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_cross"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_black"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_st_andrews_cross"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A29a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_rectangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_three_oblique_bars"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A30">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_airfield"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A31">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_cross_wind"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_A32">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#DangerWarningSign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_other_dangers"/>
+    </owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_white_horizontal_bar">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_power_driven_vehicles">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_motorcycles">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_cycles">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_mopeds">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_goods_vehicles">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_trailer">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_pedestrians">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_animal_drawn_vehicles">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_width_limit">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_height_limit">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_weight_limit">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_axle_weight_limit">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_length_limit">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_distance_limit">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_no_left_turn">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_no_right_turn">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_no_u_turn">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_no_overtaking">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_no_overtaking_goods">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_speed_limit">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_horn_prohibited">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_customs_stop">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_prohibitions">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_speed_limit">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_parking_prohibited">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_standing_and_parking_prohibited">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C1a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_white_horizontal_bar"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C2">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C3a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_power_driven_vehicles"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C3b">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_motorcycles"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C3c">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_cycles"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C3e">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_goods_vehicles"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C3i">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_pedestrians"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C5">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_width_limit"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C6">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_height_limit"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C7">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_weight_limit"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C11a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_no_left_turn"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C11b">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_no_right_turn"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C12">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_no_u_turn"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C13aa">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_no_overtaking"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C13ba">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_no_overtaking_goods"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C14">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_speed_limit"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C15">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_horn_prohibited"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C16">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_customs_stop"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C17a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_black"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_prohibitions"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C17c">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_black"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_speed_limit"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C18">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_parking_prohibited"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_C19">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_standing_and_parking_prohibited"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_stop">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_priority_road">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_priority">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_priority_oncoming">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_priority_over_oncoming">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_B1">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#PrioritySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_triangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_B2a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#PrioritySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_octagon"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_stop"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_B2b">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#PrioritySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_stop"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_B3">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#PrioritySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_square"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_black"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_priority_road"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_B4">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#PrioritySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_square"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_black"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_priority"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_B5">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#PrioritySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_priority_oncoming"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_B6">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#PrioritySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_rectangle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_priority_over_oncoming"/>
+    </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_direction_to_be_followed">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_pass_this_side">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_roundabout">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_minimum_speed">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_compulsory_minimum_speed">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_snow_chains">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_compulsory_snow_chains">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_pedestrian_path">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_cycle_track">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_equestrian_path">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_shared_path">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_separated_path">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Symbol"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D1a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_direction_to_be_followed"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D1b">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_direction_to_be_followed"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D2">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_pass_this_side"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D3">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_roundabout"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D4">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_minimum_speed"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D5">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_compulsory_minimum_speed"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D6">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_snow_chains"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D7">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_red"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_end_of_compulsory_snow_chains"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D8">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_pedestrian_path"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D9">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_cycle_track"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D10">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_equestrian_path"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D11a">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_shared_path"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#Sign_D11b">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#MandatorySign"/>
+        <hasShape rdf:resource="http://www.ontology.org/traffic/vienna-convention#shape_circle"/>
+        <hasGroundColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_blue"/>
+        <hasBorderColour rdf:resource="http://www.ontology.org/traffic/vienna-convention#color_white"/>
+        <hasSymbol rdf:resource="http://www.ontology.org/traffic/vienna-convention#symbol_compulsory_separated_path"/>
+    </owl:NamedIndividual>
+
+
+
+<owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_triangle">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_square">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_circle">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_octagon">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_cross">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#shape_rectangle">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Shape"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#color_red">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#color_white">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#color_yellow">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#color_black">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.ontology.org/traffic/vienna-convention#color_blue">
+        <rdf:type rdf:resource="http://www.ontology.org/traffic/vienna-convention#Colour"/>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
