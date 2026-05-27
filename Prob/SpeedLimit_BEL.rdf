@@ -1,0 +1,63 @@
+@prefix : <http://www.ontology.org/traffic/bayesian-speed#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ontology.org/traffic/bayesian-speed> .
+
+<http://www.ontology.org/traffic/bayesian-speed> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+:hasBorderColour rdf:type owl:ObjectProperty .
+:hasGroundColour rdf:type owl:ObjectProperty .
+:hasShape rdf:type owl:ObjectProperty .
+
+#################################################################
+#    Classes
+#################################################################
+
+:Context rdf:type owl:Class .
+:EuropeanContext rdf:type owl:Class ; rdfs:subClassOf :Context .
+:USContext rdf:type owl:Class ; rdfs:subClassOf :Context .
+
+:RoadSign rdf:type owl:Class .
+:ProhibitoryOrRestrictiveSign rdf:type owl:Class ; rdfs:subClassOf :RoadSign .
+:SpeedLimitSign rdf:type owl:Class ; rdfs:subClassOf :ProhibitoryOrRestrictiveSign .
+
+:ColorBlack rdf:type owl:Class .
+:ColorRed rdf:type owl:Class .
+:ColorWhite rdf:type owl:Class .
+:ShapeCircle rdf:type owl:Class .
+:ShapeRectangle rdf:type owl:Class .
+
+#################################################################
+#    Bayesian General Class Axioms (GCIs)
+#################################################################
+
+# RULE 1: IF (SpeedLimitSign AND EuropeanContext) THEN (Shape is Circle)
+[ rdf:type owl:Class ;
+  owl:intersectionOf ( :SpeedLimitSign :EuropeanContext ) ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty :hasShape ; owl:someValuesFrom :ShapeCircle ]
+] .
+
+# RULE 2: IF (SpeedLimitSign AND EuropeanContext) THEN (Border is Red)
+[ rdf:type owl:Class ;
+  owl:intersectionOf ( :SpeedLimitSign :EuropeanContext ) ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty :hasBorderColour ; owl:someValuesFrom :ColorRed ]
+] .
+
+# RULE 3: IF (SpeedLimitSign AND USContext) THEN (Shape is Rectangle)
+[ rdf:type owl:Class ;
+  owl:intersectionOf ( :SpeedLimitSign :USContext ) ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty :hasShape ; owl:someValuesFrom :ShapeRectangle ]
+] .
+
+# RULE 4: IF (SpeedLimitSign AND USContext) THEN (Border is Black)
+[ rdf:type owl:Class ;
+  owl:intersectionOf ( :SpeedLimitSign :USContext ) ;
+  rdfs:subClassOf [ rdf:type owl:Restriction ; owl:onProperty :hasBorderColour ; owl:someValuesFrom :ColorBlack ]
+] .

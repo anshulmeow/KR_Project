@@ -1,0 +1,64 @@
+Prefix(ont:=<http://example.org/born/flu#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+Ontology(<http://example.org/born/flu>
+
+Declaration(AnnotationProperty(ont:prob))
+
+Declaration(Class(ont:ClinicCase))
+Declaration(Class(ont:FluLikeCase))
+Declaration(Class(ont:Fever))
+Declaration(Class(ont:Cough))
+Declaration(Class(ont:FebrileCase))
+Declaration(Class(ont:RespiratoryCase))
+Declaration(Class(ont:ProbableInfluenza))
+Declaration(Class(ont:HighRiskPatient))
+Declaration(Class(ont:UrgentTreatmentCase))
+
+Declaration(ObjectProperty(ont:hasSymptom))
+
+SubClassOf(Annotation(ont:prob "x0"^^xsd:string)
+  ont:ClinicCase
+  ont:FluLikeCase
+)
+
+SubClassOf(Annotation(ont:prob "x0"^^xsd:string)
+  ont:FluLikeCase
+  ObjectSomeValuesFrom(ont:hasSymptom ont:Fever)
+)
+
+SubClassOf(Annotation(ont:prob "x0"^^xsd:string)
+  ont:FluLikeCase
+  ObjectSomeValuesFrom(ont:hasSymptom ont:Cough)
+)
+
+SubClassOf(Annotation(ont:prob "x2"^^xsd:string)
+  ObjectSomeValuesFrom(ont:hasSymptom ont:Fever)
+  ont:FebrileCase
+)
+
+SubClassOf(Annotation(ont:prob "\\+x1"^^xsd:string)
+  ObjectSomeValuesFrom(ont:hasSymptom ont:Cough)
+  ont:RespiratoryCase
+)
+
+SubClassOf(Annotation(ont:prob "x3"^^xsd:string)
+  ObjectIntersectionOf(ont:FebrileCase ont:RespiratoryCase)
+  ont:ProbableInfluenza
+)
+
+SubClassOf(Annotation(ont:prob "x4"^^xsd:string)
+  ont:ClinicCase
+  ont:HighRiskPatient
+)
+
+SubClassOf(Annotation(ont:prob "x5"^^xsd:string)
+  ObjectIntersectionOf(ont:ProbableInfluenza ont:HighRiskPatient)
+  ont:UrgentTreatmentCase
+)
+
+)
