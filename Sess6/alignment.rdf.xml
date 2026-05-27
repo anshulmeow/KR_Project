@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:mtsd="http://example.org/mtsd/class#"
+         xmlns:vc="http://www.ontology.org/traffic/vienna-convention#"
+         xml:base="http://example.org/alignment">
+         
+    <owl:Ontology rdf:about="http://example.org/alignment">
+        <owl:imports rdf:resource="http://www.ontology.org/traffic/vienna-convention"/>
+    </owl:Ontology>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_BicyclesOnly_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#CompulsoryCycleTrack"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_BicyclesOnly_G2">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#CompulsoryCycleTrack"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_BicyclesOnly_G3">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#CompulsoryCycleTrack"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_BusesOnly_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#CompulsoryBusLane"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DetourLeft_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#DirectionToBeFollowed_Left"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DoNotBlockIntersection_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitionOfEntry_Intersection"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DoNotStopOnTracks_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#ProhibitionOfStoppingOnTracks"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DualLanesGoStraightOnLeft_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#DirectionOfLanes_StraightLeft"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DualLanesGoStraightOnRight_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#DirectionOfLanes_StraightRight"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DualLanesTurnLeftNoUTurn_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#DirectionOfLanes_TurnLeftOnly"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DualLanesTurnLeftOrStraight_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#DirectionOfLanes_LeftOrStraight"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DualLanesTurnRightOrStraight_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#DirectionOfLanes_RightOrStraight"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DualPathBicyclesAndPedestrians_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#CompulsoryJointPath_CyclistsPedestrians"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_DualPathPedestriansAndBicycles_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#CompulsoryJointPath_CyclistsPedestrians"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfBicyclesOnly_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfCompulsoryCycleTrack"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfBusesOnly_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfCompulsoryBusLane"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfMaximumSpeedLimit30_G2">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfSpeedLimit_30"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfMaximumSpeedLimit70_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfSpeedLimit_70"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfMaximumSpeedLimit70_G2">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfSpeedLimit_70"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfNoParking_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfProhibitionOfParking"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfPriorityRoad_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfPriority"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfProhibition_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfAllLocalProhibitions"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_EndOfSpeedLimitZone_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#EndOfSpeedLimitZone"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_GiveWayToOncomingTraffic_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#PriorityForOncomingTraffic"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_GoStraight_G1">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#DirectionToBeFollowed_Straight"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://example.org/mtsd/class#MTSD_Regulatory_GoStraight_G3">
+        <owl:equivalentClass rdf:resource="http://www.ontology.org/traffic/vienna-convention#DirectionToBeFollowed_Straight"/>
+    </owl:Class>
+
+</rdf:RDF>
